@@ -18,6 +18,8 @@
             padding: 20px;
         }
         section {
+            max-width: 800px;
+            margin: auto;
             padding: 20px;
             text-align: center; /* Center-align section content */
         }
@@ -28,6 +30,33 @@
             width: 800px;
             padding: 10px;
         }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        /* Define the flex items (pictures) within the container */
+        .flex-item {
+            flex: 1; /* Each item takes an equal portion of the available space */
+            max-width: 50%; /* Each item should be 50% of the container width */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            padding: 10px; /* Add spacing between items */
+        }
+
+         /* Media query to switch to 2 rows on screens less than 800 pixels wide */
+         @media (max-width: 800px) {
+            .flex-item {
+                max-width: 100%; /* Each item takes the full container width */
+            }
+        }
+
+        /* Example styling for images (you can adjust as needed) */
+        .flex-item img {
+            width: 100%; 
+            height: auto; 
+        } 
+
         footer {
             background-color: #333;
             color: #fff;
@@ -37,13 +66,21 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>Mercedes Galanto Quinol</h1>
     </header>
     <section>
-        <img src="mqgwdate-800.png" alt="Mercy Quinol"> 
-        <br><br>
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="mgqheadshot-285.png" alt="Mercy Quinol">
+            </div>
+            <div class="flex-item">
+                <img src="mgqdates-400.png" alt="MQ Dates">
+            </div>
+        </div>
     </section>
+
     <section>
         <h2>Remembering Her Life</h2>
         <p class="center-justified">
@@ -67,7 +104,14 @@
     </section>
     <section>
         <h2>Her Favorite Poem</h2>
-        <img src="mgqpoem-800.png" alt="poem">
+        <div class="flex-container">
+            <div class="flex-item">
+                <img src="mgqpoem-400.png" alt="Poem">
+            </div>
+            <div class="flex-item">
+                <img src="mgqreading-400.png" alt="MQ Reading">
+            </div>
+        </div>
     </section>
     <section>
         <h2>Gathering to Celebrate her Life</h2>
