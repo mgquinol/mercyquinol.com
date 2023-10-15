@@ -42,7 +42,13 @@
         img {
             max-width: 90vw;
         }
-
+        span a {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
         .center-justified {
             text-align: justify;
             font-family: Forum, serif;
@@ -96,8 +102,17 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <h1>1940 &bull; Mercedes Galanto Quinol &bull; 2023</h1>
+        <p>
+            <span class="col"><a href="#home">Home</a></span>
+            <span class="col"><a href="#obit">Story</a></span>
+            <span class="col"><a href="#poem">Poetry</a></span>
+            <span class="col"><a href="#music">Music</a></span>
+            <span class="col"><a href="#share">Share</a></span>
+            <span class="col"><a href="#donate">Donate</a></span>
+            <span class="col"><a href="#gather">Gather</a></span>
+        </p>
     </header>
     <section>
         <div class="responsive-two-column-grid">
@@ -109,7 +124,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="obit">
         <h2>Remembering Her Life</h2>
         <p class="center-justified">
             Mercedes Galanto Quinol, affectionately known as Mercy, passed away on September 27, 2023, at the age of 83
@@ -154,7 +169,7 @@
             an amazing party going on. I can’t wait to join and celebrate with her again”.
         </p>
     </section>
-    <section>
+    <section id="poem">
         <h2>A Favorite Poem</h2>
         <div class="responsive-two-column-grid">
             <div class="flex-item">
@@ -165,7 +180,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="music">
         <h2>A Favorite Song</h2>
         <p class="center-justified">
         The song "King of Kings" was written and performed by her grandson, Christian, and 
@@ -177,13 +192,20 @@
             Your browser does not support the audio element.
         </audio>
     </section>
-    <section>
+    <section id="share">
         <h2>Sharing Your Memories</h2>
         <p class="center-justified">
             If you have a picture, memory, or reflection about Mercy you would like to share you can submit them using <a href="https://forms.gle/8beJLpLykzBh3oEy7">THIS LINK.</a> We will update this website following Mercy's Celebration of Life.
         </p>
     </section>
-    <section>
+    <section id="donate">
+        <h2>Donating to her Cause</h2>
+        <p class="center-justified">
+            In lieu of flowers, the family kindly requests donations to Mercy’s fundraiser for the American Cancer Society. 
+            Donations can be made using <a href="https://raiseyourway.donordrive.com/campaign/MGQ">THIS LINK.</a>
+        </p>
+    </section>
+    <section id="gather">
         <h2>Gathering to Celebrate her Life on October 28th</h2>
         <p class="center-justified">
             There will be a memorial service at her church in Evanston to be followed by a life celebration nearby.
@@ -195,14 +217,7 @@
                 <img class="single-pic" src="invite_pic.jpg" alt="invite"></a>
         </p>
     </section>
-    <section>
-        <h2>Donating to her Cause</h2>
-        <p class="center-justified">
-            In lieu of flowers, the family kindly requests donations to Mercy’s fundraiser for the American Cancer Society. 
-            Donations can be made using <a href="https://raiseyourway.donordrive.com/campaign/MGQ">THIS LINK.</a>
-        </p>
-    </section>
-
+    
     <footer>
         <Section><img src="favicon-32x32.png"> In Loving Memory of our Mom. <img src="favicon-32x32.png"></Section>
     </footer>
