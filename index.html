@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <link rel="stylesheet"   href="https://fonts.googleapis.com/css2?family=Forum">
+    <title>In Memory of Mercedes Galanto Quinol</title>
     <style>
         body {
             font-family: Copperplate Gothic Light;
@@ -18,44 +19,34 @@
             padding: 20px;
         }
         section {
-            max-width: 800px;
+            max-width: 800px; 
             margin: auto;
             padding: 20px;
             text-align: center; /* Center-align section content */
         }
         .center-justified { 
             text-align: justify;
-            font-family: PT Serif, sans-serif;
+            font-family: Forum, serif;
+            font-size: 20px;
             margin: 0 auto;
             width: 800px;
             padding: 10px;
         }
-        .flex-container {
-            display: flex;
-            flex-wrap: wrap;
+        .responsive-two-column-grid {
+            display:block;
             align-items: center;
+            max-width: 900;
         }
-
-        /* Define the flex items (pictures) within the container */
-        .flex-item {
-            flex: 1; /* Each item takes an equal portion of the available space */
-            max-width: 50%; /* Each item should be 50% of the container width */
-            box-sizing: border-box; /* Ensure padding and border are included in width */
-            padding: 10px; /* Add spacing between items */
+        .responsive-two-column-grid > * {
+            padding:1rem;
         }
-
-         /* Media query to switch to 2 rows on screens less than 800 pixels wide */
-         @media (max-width: 800px) {
-            .flex-item {
-                max-width: 100%; /* Each item takes the full container width */
-            }
-        }
-
-        /* Example styling for images (you can adjust as needed) */
-        .flex-item img {
-            width: 100%; 
-            height: auto; 
-        } 
+/* tablet breakpoint */
+@media (min-width:800px) {
+    .responsive-two-column-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
         footer {
             background-color: #333;
@@ -71,7 +62,7 @@
         <h1>Mercedes Galanto Quinol</h1>
     </header>
     <section>
-        <div class="flex-container">
+        <div class="responsive-two-column-grid">
             <div class="flex-item">
                 <img src="mgqheadshot-285.png" alt="Mercy Quinol">
             </div>
@@ -84,7 +75,7 @@
     <section>
         <h2>Remembering Her Life</h2>
         <p class="center-justified">
-            Mercedes Galanto Quinol, affectionately known as Mercy, passed away on September 27, 2023, at the age of 83 due to complications related to lung cancer. She is survived by her devoted husband, Agustin (Butch), two sisters, Rebecca, and Gloria, and two brothers Pablo and Jeremiah, four daughters and their significant others, Frances, Joy and Steve, Tina and Jason, and Sheila and Brian. She is also survived by her five beloved grandchildren and their significant others, Austin and Toni, Christian and Dena, Mackenzie, Adelyn, and Genevieve, as well as numerous cherished family, friends, and colleagues.
+            Mercedes Galanto Quinol, affectionately known as Mercy, passed away on September 27, 2023, at the age of 83 due to complications related to lung cancer. She is survived by her devoted husband, Agustin (Butch), two sisters, Rebecca, and Gloria, and two brothers Pablo and Jeremiah, four daughters and their partners, Frances and Bradley, Joy and Steve, Tina and Jason, and Sheila and Brian. She is also survived by five beloved grandchildren and their significant others, Austin and Toni, Christian and Dena, Mackenzie, Adelyn, and Genevieve, as well as numerous cherished family, friends, and colleagues.
         </p>
         <p class="center-justified">
             Mercy's journey began in the Philippines as one of twelve siblings, where her early childhood was filled with love, warmth, and a strong example of what it means to be a family. It was during these formative years that she developed a deep faith in her Lord and Savior, Jesus Christ. Her unwavering faith remained a guiding light throughout her life, offering hope, strength, and comfort to those fortunate enough to know her.
@@ -104,7 +95,7 @@
     </section>
     <section>
         <h2>Her Favorite Poem</h2>
-        <div class="flex-container">
+        <div class="responsive-two-column-grid">
             <div class="flex-item">
                 <img src="mgqpoem-400.png" alt="Poem">
             </div>
@@ -115,6 +106,9 @@
     </section>
     <section>
         <h2>Gathering to Celebrate her Life</h2>
+        <p class="center-justified">
+            There will be a memorial service at her church in Evanston to be followed by a life celebration nearby. Further details are provided in invitation flyer below (click on the image to open it). For those who cannot attend we will post a link to the livestream of the memorial service here when it is available.  
+        </p>
         <a href="mercyquinolcelebration.pdf" target="_blank">
         <img src="invite_pic.jpg" alt="invite">
     </a>
