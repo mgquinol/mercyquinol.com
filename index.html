@@ -42,6 +42,12 @@
             max-width: 800px;
             padding: 10px;
         }
+        .single-pic { 
+            text-align: justify;
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 10px;
+        }
         .responsive-two-column-grid {
             display:block;
             align-items: center;
@@ -50,7 +56,12 @@
         .responsive-two-column-grid > * {
             padding:1rem;
         }
-
+        /* Define the flex items (pictures) within the container */
+        .flex-item {
+            flex: 1; /* Each item takes an equal portion of the available space */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+            padding: 10px; /* Add spacing between items */
+        }
         /* tablet breakpoint */
         @media (min-width:800px) {
             .responsive-two-column-grid {
@@ -117,9 +128,10 @@
         <p class="center-justified">
             There will be a memorial service at her church in Evanston to be followed by a life celebration nearby. Further details are provided in invitation flyer below (click on the image to open it). For those who cannot attend we will post a link to the livestream of the memorial service here when it is available.  
         </p>
-        <a href="mercyquinolcelebration.pdf" target="_blank">
-        <img src="invite_pic.jpg" alt="invite">
-    </a>
+        <p class="single-pic">
+        <a href="mercyquinolcelebration.pdf" target="_blank" >
+        <img src="invite_pic.jpg" alt="invite" width="100%"></a>
+        </p>
     </section>
 
     <footer>
